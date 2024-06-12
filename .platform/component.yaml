@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "spec-sandro-mr-teste-app"
+  description: "Artifacts generator via Spec."
+  annotations:
+    github.com/project-slug: veecode-homolog/spec-sandro-mr-teste-app
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: publish.yml
+    kong-manager/service-name: app.spec-sandro-mr-teste-app.spec-sandro-mr-teste-app-service-0.80
+    kong-manager/instance: /kong-manager/ec2-mvp-teste-mr-01
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  providesApis:
+    - spec-sandro-mr-teste-app
